@@ -3,8 +3,8 @@ import PropTypes from 'prop-types'
 import Entry from './Entry'
 
 const EntryList = ({ entries }) => (
-  <div>{entries.map((entry, index) => (
-    <Entry key={index} {...entry} />
+  <div>{entries.map((entry) => (
+    <Entry key={entry.title} {...entry} />
   ))}</div>
 )
 
