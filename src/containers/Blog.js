@@ -1,9 +1,9 @@
 import { connect } from 'react-redux'
 // import { retrieveEntries } from '../actions'
-import EntryList from '../components/EntryList'
+import EntryList from 'components/EntryList'
 
 const getFilteredEntries = (entries, search) => {
-  return entries.filter((entry) => entry.title.indexOf(search) > -1)
+  return entries
 }
 
 const mapStateToProps = state => {
@@ -12,7 +12,7 @@ const mapStateToProps = state => {
   }
 }
 
-const mapDispatchToProps = () => {
+const mapDispatchToProps = dispatch => {
   return {}
 }
 

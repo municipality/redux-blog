@@ -9,9 +9,9 @@ const Entry = ({ title, text, img, tags, isOpen }) => (
       <div>
         {img && <img src={img} />}
         <div className="entry-text">{text}</div>
-        <div className="entry-tags">{tags.map( (tag, index) => (
-          <span key={index}>{tag}</span>
-        ))}</div>
+        <div className="entry-tags">
+          {tags.map((tag, index) => <span key={index}>{tag}</span>)}
+        </div>
       </div>
     )}
   </div>

@@ -1,4 +1,4 @@
-import { RETRIEVE_ENTRIES, SEARCH_ENTRIES } from '../actions'
+import { RETRIEVE_ENTRIES, SEARCH_ENTRIES } from 'actions'
 import { combineReducers } from 'redux'
 
 /**
@@ -7,19 +7,10 @@ import { combineReducers } from 'redux'
  * @param action
  */
 
-const defaultEntries = [
-  {
-    title: 'Test',
-    text: 'Test text',
-    tags: ['tag1'],
-    isOpen: false,
-    date: new Date().toLocaleString()
-  }
-]
-function entries(state = defaultEntries, action) {
+function entries(state = [], action) {
   switch (action.type) {
   case RETRIEVE_ENTRIES: {
-    return [...state, action.entries]
+    return [...state, ...action.entries]
   }
   default: {
     return state

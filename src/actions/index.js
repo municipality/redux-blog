@@ -1,21 +1,34 @@
-/**
- * Action to retrieve entries from DB
- */
+import fetch from 'isomorphic-fetch'
+
 export const RETRIEVE_ENTRIES = 'RETRIEVE_ENTRIES'
-export const retrieveEntries = () => {
-  // retrieve entries via some API then pass state
-  // For now add fake data
+/**
+ * @function receiveEntries
+ * @param entries entries retrieved from db
+ * @returns action to be used in reducer
+ */
+const receiveEntries = entries => {
   return {
     type: RETRIEVE_ENTRIES,
-    entries: [
-      {
-        title: 'Test',
-        text: 'Test text',
-        tags: ['tag1'],
-        isOpen: true,
-        date: new Date().toLocaleString()
-      }
-    ]
+    entries
+  }
+}
+
+/**
+ * Action to retrieve entries from DB
+ * @return function that takes in a dispatch to dispatch after completion
+ */
+export const fetchEntries = () => {
+  //RETURNS A FUNCTION WITH DISPATCH PASSED TO BE USED
+  return dispatch => {
+    // retrieve entries via some API then pass state
+    // const retrieveEntriesURL = `${document.location.origin}/api/retrieveentries`
+    const retrieveEntriesURL = 'http://localhost:3001/api/retrieveentries'
+    fetch(retrieveEntriesURL)
+      .then(response => response.json())
+      .then(entries => {
+        console.log(entries)
+        dispatch(receiveEntries(entries))
+      })
   }
 }
 

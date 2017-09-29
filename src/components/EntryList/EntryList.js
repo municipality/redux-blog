@@ -1,11 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Entry from './Entry'
+import Entry from 'components/Entry'
 
 const EntryList = ({ entries }) => (
-  <div>{entries.map((entry) => (
-    <Entry key={entry.title} {...entry} />
-  ))}</div>
+  <div>{entries.map(entry => <Entry key={entry.title} {...entry} />)}</div>
 )
 
 EntryList.propTypes = {
