@@ -1,4 +1,4 @@
-import { RETRIEVE_ENTRIES, SEARCH_ENTRIES } from 'actions'
+import { RECEIVE_ENTRIES, SEARCH_ENTRIES } from 'actions'
 import { combineReducers } from 'redux'
 
 /**
@@ -9,7 +9,7 @@ import { combineReducers } from 'redux'
 
 function entries(state = [], action) {
   switch (action.type) {
-  case RETRIEVE_ENTRIES: {
+  case RECEIVE_ENTRIES: {
     return [...state, ...action.entries]
   }
   default: {

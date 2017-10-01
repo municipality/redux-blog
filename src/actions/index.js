@@ -1,6 +1,6 @@
 import fetch from 'isomorphic-fetch'
 
-export const RETRIEVE_ENTRIES = 'RETRIEVE_ENTRIES'
+export const RECEIVE_ENTRIES = 'RECEIVE_ENTRIES'
 /**
  * @function receiveEntries
  * @param entries entries retrieved from db
@@ -8,7 +8,7 @@ export const RETRIEVE_ENTRIES = 'RETRIEVE_ENTRIES'
  */
 const receiveEntries = entries => {
   return {
-    type: RETRIEVE_ENTRIES,
+    type: RECEIVE_ENTRIES,
     entries
   }
 }
