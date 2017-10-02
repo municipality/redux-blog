@@ -6,7 +6,9 @@ import { searchEntries } from 'actions'
  * maps states to props (this case do nothing)
  */
 const mapStateToProps = state => {
-  return state
+  return {
+    searchTerm: state.search || ''
+  }
 }
 
 /**

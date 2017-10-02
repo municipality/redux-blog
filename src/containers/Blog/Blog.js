@@ -8,8 +8,19 @@ import EntryList from 'components/EntryList'
  * @return {array of Objects} returns filtered array of entries
  */
 const getFilteredEntries = (entries, search) => {
-  //Currently only filter by title
-  return entries.filter(entry => entry.title.indexOf(search) > -1)
+  // if search starts with #, only search tags
+  if (search && search.charAt(0) === '#') {
+    return entries.filter(
+      entry =>
+        entry.tags.filter(tag => {
+          search = search.substring(1)
+          return tag.toLowerCase().indexOf(search.toLowerCase()) > -1
+        }).length > 0
+    )
+  }
+  return entries.filter(
+    entry => entry.title.toLowerCase().indexOf(search.toLowerCase()) > -1
+  )
 }
 
 const mapStateToProps = state => {

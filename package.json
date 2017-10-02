@@ -5,6 +5,7 @@
   "dependencies": {
     "isomorphic-fetch": "^2.2.1",
     "mongodb": "^2.2.31",
+    "node-sass-chokidar": "0.0.3",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "react-redux": "^5.0.6",
@@ -14,13 +15,17 @@
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",
-    "eslint": "^3.19.0",
+    "concurrently": "^3.5.0",
+    "eslint": "^4.1.1",
     "eslint-plugin-react": "^7.4.0"
   },
   "scripts": {
+    "build-css": "node-sass-chokidar src/ -o src/",
+    "watch-css":
+      "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
     "postinstall": "npm run build",
-    "debug": "react-scripts start",
-    "build": "react-scripts build",
+    "debug": "concurrently \"react-scripts start\" \"npm run watch-css\"",
+    "build": "react-scripts build && npm run build-css",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "start": "node ./bin/www"

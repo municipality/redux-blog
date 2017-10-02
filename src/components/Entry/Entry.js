@@ -1,5 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import Tag from 'containers/Tag'
+import './Entry.css'
 
 //List of props used in Entry component
 const Entry = ({ title, text, img, tags, isOpen }) => (
@@ -10,7 +12,7 @@ const Entry = ({ title, text, img, tags, isOpen }) => (
         {img && <img src={img} />}
         <div className="entry-text">{text}</div>
         <div className="entry-tags">
-          {tags.map((tag, index) => <span key={index}>{tag}</span>)}
+          {tags.map((tag, index) => <Tag text={tag} />)}
         </div>
       </div>
     )}
