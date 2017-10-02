@@ -1,15 +1,18 @@
 .avatar {
-  display: inline-block;
-  position: absolute;
-  top: 25%;
-  left: 50%;
-  transform: translateX(-50%); }
+  display: inline-block; }
   .avatar .avatar-image {
     border-radius: 100px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100px;
-    height: 100px; }
+    width: 150px;
+    height: 150px; }
   .avatar .avatar-name {
-    text-align: center; }
+    text-align: center;
+    color: white; }
+
+.sidebar .avatar {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%); }

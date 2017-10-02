@@ -1,6 +1,8 @@
 $sidebar-width: 320px;
+$sidebar-bg-color: #2b2b2b;
 
 .sidebar {
   width: 320px;
   position: relative;
+  background-color: $sidebar-bg-color;
 }
