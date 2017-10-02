@@ -1,0 +1,15 @@
+.avatar {
+  display: inline-block;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%); }
+  .avatar .avatar-image {
+    border-radius: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100px;
+    height: 100px; }
+  .avatar .avatar-name {
+    text-align: center; }

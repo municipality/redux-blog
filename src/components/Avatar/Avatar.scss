@@ -1,0 +1,24 @@
+$avatar-image-width: 100px;
+$avatar-image-height: 100px;
+
+.avatar {
+  // Trim width of avatar to fit
+  display: inline-block;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+
+  .avatar-image {
+    border-radius: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: $avatar-image-width;
+    height: $avatar-image-height;
+  }
+
+  .avatar-name {
+    text-align: center;
+  }
+}

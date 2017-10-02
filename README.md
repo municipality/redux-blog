@@ -29,6 +29,8 @@ SEARCH_ENTRIES)
 since TextInput is programmatically changed, it needed a state, "value" key mapped
 to state, and onChange listener which set state to field value event.target.value
 
+componentWillReceiveProps(nextProps) hook is implemented to update the SearchField
+
 ### TODOs:
 - Extrapolate tag to tags container and have that container handle all onClick handling
 
