@@ -1,12 +1,10 @@
 import React from 'react'
+import PageLinks from 'components/PageLinks'
 import './Footer.css'
 
 const Footer = () => (
   <div className="footer">
-    <ul>
-      <li>To do 1</li>
-      <li>To do 2</li>
-    </ul>
+    <PageLinks />
   </div>
 )
 

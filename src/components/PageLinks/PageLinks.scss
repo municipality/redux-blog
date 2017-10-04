@@ -1,0 +1,27 @@
+$page-link-font-size: 24px;
+$page-link-hover-font-size: 28px;
+$page-link-padding: 5px 0;
+
+.page-links {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  a {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    opacity: 0.5;
+    font-size: $page-link-font-size;
+
+    padding: $page-link-padding;
+
+    // Do animation for hover over
+    transition: font-size 0.2s;
+  }
+
+  a:hover {
+    opacity: 1;
+    font-size: $page-link-hover-font-size;
+  }
+}

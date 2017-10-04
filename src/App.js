@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import './App.css'
-import Blog from 'containers/Blog'
-import SearchField from 'containers/SearchField'
+import BlogViewer from 'components/BlogViewer'
 import Layout from 'components/Layout'
 import Sidebar from 'components/Sidebar'
 
@@ -15,16 +14,7 @@ class App extends Component {
         <Layout>
           <Sidebar />
           <Switch>
-            <Route
-              exact
-              path="/"
-              render={() => (
-                <div>
-                  <SearchField placeholder="Search..." />
-                  <Blog />
-                </div>
-              )}
-            />
+            <Route exact path="/" component={BlogViewer} />
           </Switch>
         </Layout>
       </div>
