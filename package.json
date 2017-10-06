@@ -22,8 +22,10 @@
     "eslint-plugin-react": "^7.4.0"
   },
   "scripts": {
-    "build-css": "node-sass-chokidar src/ -o src/",
-    "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
+    "build-css":
+      "node-sass-chokidar --include-path ./src src/components -o src/components",
+    "watch-css":
+      "npm run build-css && node-sass-chokidar --include-path ./src src/components/ -o src/components --watch --recursive",
     "postinstall": "npm run build",
     "debug": "concurrently \"react-scripts start\" \"npm run watch-css\"",
     "build": "react-scripts build && npm run build-css",

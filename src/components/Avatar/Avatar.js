@@ -7,10 +7,11 @@ const Avatar = ({ img, name }) => (
     <div
       className="avatar-image"
       style={{
-        backgroundImage: `url(${img})`
+        // image is located in /public folder
+        backgroundImage: 'url(avatar.jpg)'
       }}
     />
-    <div className="avatar-name">{name || 'brianslaundry'}</div>
+    <div className="avatar-name">{name || 'Brian Lee'}</div>
   </div>
 )
 

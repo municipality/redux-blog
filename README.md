@@ -4,6 +4,15 @@ Node and Express with Mongo DB and React/Redux (MERN)
 
 Created with create-react-app
 
+#### Note:
+
+--include-path in node-sass allows absolute path for @import scss statements
+
+Do not include src/styles in node-sass because we do not want to compile
+css files
+
+SVG icons from icomoon
+
 ### Application structure:
 
 Blog state (laid out in '/reducers'): {

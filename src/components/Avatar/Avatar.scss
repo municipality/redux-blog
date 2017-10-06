@@ -1,5 +1,10 @@
-$avatar-image-width: 150px;
-$avatar-image-height: 150px;
+@import 'styles/colors';
+$avatar-image-width: 180px;
+$avatar-image-height: 180px;
+
+$avatar-name-font-size: 28px;
+$avatar-name-color: map-get($colors, pink);
+$avatar-name-font-weight: 600;
 
 .avatar {
   // Trim width of avatar to fit
@@ -12,18 +17,24 @@ $avatar-image-height: 150px;
     background-size: cover;
     width: $avatar-image-width;
     height: $avatar-image-height;
+
+    // Center image based on avatar-name
+    margin: auto;
   }
 
   .avatar-name {
     text-align: center;
-    color: white;
+    color: $avatar-name-color;
+    font-size: $avatar-name-font-size;
+    padding: 10px 0;
+    font-weight: $avatar-name-font-weight;
   }
 }
 
 // Use this CSS only when the avatar is in the sidebar component
 .sidebar .avatar {
   position: absolute;
-  top: 20%;
+  top: 15%;
   left: 50%;
   transform: translateX(-50%);
 }
