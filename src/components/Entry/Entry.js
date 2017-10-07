@@ -9,7 +9,7 @@ const Entry = ({ title, text, img, tags, isOpen }) => (
     <p>{title}</p>
     {isOpen && (
       <div>
-        {img && <img alt="brianslaundry" src={img} />}
+        {img && <img className="entry-image" alt="brianslaundry" src={img} />}
         <div className="entry-text">{text}</div>
         <div className="entry-tags">
           {tags.map((tag, index) => <Tag key={tag} text={tag} />)}

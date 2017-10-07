@@ -1,5 +1,4 @@
 $page-link-font-size: 24px;
-$page-link-hover-font-size: 28px;
 $page-link-padding: 5px 0;
 
 .page-links {
@@ -22,6 +21,10 @@ $page-link-padding: 5px 0;
 
   a:hover {
     opacity: 1;
-    // font-size: $page-link-hover-font-size;
   }
+}
+
+$sidebar-page-links-padding: 10px 0 20px 0;
+.sidebar .page-links {
+  padding: $sidebar-page-links-padding;
 }

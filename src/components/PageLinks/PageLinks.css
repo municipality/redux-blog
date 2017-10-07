@@ -12,3 +12,6 @@
     transition: opacity 0.2s; }
   .page-links a:hover {
     opacity: 1; }
+
+.sidebar .page-links {
+  padding: 10px 0 20px 0; }

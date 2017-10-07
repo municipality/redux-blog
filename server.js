@@ -32,7 +32,8 @@ router.get('/retrieveentries', function(req, res) {
         text: 'Test text 1',
         isOpen: true,
         tags: ['tag1', 'tag2'],
-        date: new Date()
+        date: new Date(),
+        img: 'banner.jpg'
       },
       {
         title: 'Test title 2',

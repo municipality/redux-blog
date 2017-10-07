@@ -1,3 +1,6 @@
 .entry-tags {
   display: flex;
   flex-direction: row; }
+
+.entry-image {
+  width: 100%; }

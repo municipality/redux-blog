@@ -1,10 +1,9 @@
 @import 'styles/colors';
 
 $social-media-icons-font-size: 24px;
-$social-media-icons-padding: 50px 0 0 0;
+$social-media-icons-padding: 10px 0;
 
 .social-media-icons {
-  padding: $social-media-icons-padding;
   display: flex;
   flex-direction: row;
 
@@ -25,4 +24,14 @@ $social-media-icons-padding: 50px 0 0 0;
       opacity: 0.7;
     }
   }
+}
+
+$sidebar-social-media-icons-border-width: 2px;
+$sidebar-social-media-icons-border-color: #634b4b;
+.sidebar .social-media-icons {
+  padding: $social-media-icons-padding;
+  border-top: $sidebar-social-media-icons-border-width solid
+    $sidebar-social-media-icons-border-color;
+  border-bottom: $sidebar-social-media-icons-border-width solid
+    $sidebar-social-media-icons-border-color;
 }
