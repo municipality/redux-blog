@@ -23,6 +23,29 @@ var router = express.Router()
 
 router.get('/retrieveentries', function(req, res) {
   // Connect to db to read
+
+  //FAKE DATA TO ONLY BE USED IN DEV
+  if (process.env.NODE_ENV !== 'production') {
+    res.json([
+      {
+        title: 'Test title 1',
+        text: 'Test text 1',
+        isOpen: true,
+        tags: ['tag1', 'tag2'],
+        date: new Date()
+      },
+      {
+        title: 'Test title 2',
+        text: 'Test text 2',
+        isOpen: true,
+        tags: ['tag1', 'tag2', 'tag3', 'tag4'],
+        date: new Date()
+      }
+    ])
+    return
+  }
+
+  // USE THIS IN PRODUCTION
   MongoClient.connect(url, function(err, db) {
     if (err) throw err
     console.log('Connected successfully to server')

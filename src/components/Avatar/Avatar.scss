@@ -1,6 +1,9 @@
 @import 'styles/colors';
 $avatar-image-width: 180px;
 $avatar-image-height: 180px;
+$avatar-image-border-style: double;
+$avatar-image-border-width: 3px;
+$avatar-image-border-color: #8e3a3a;
 
 $avatar-name-font-size: 28px;
 $avatar-name-color: map-get($colors, pink);
@@ -17,6 +20,10 @@ $avatar-name-font-weight: 600;
     background-size: cover;
     width: $avatar-image-width;
     height: $avatar-image-height;
+
+    border-width: $avatar-image-border-width;
+    border-style: $avatar-image-border-style;
+    border-color: $avatar-image-border-color;
 
     // Center image based on avatar-name
     margin: auto;
