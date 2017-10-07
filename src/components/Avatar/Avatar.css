@@ -16,7 +16,6 @@
     font-weight: 600; }
 
 .sidebar .avatar {
-  position: absolute;
-  top: 15%;
+  position: relative;
   left: 50%;
   transform: translateX(-50%); }

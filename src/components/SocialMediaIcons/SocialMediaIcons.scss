@@ -1,0 +1,28 @@
+@import 'styles/colors';
+
+$social-media-icons-font-size: 24px;
+$social-media-icons-padding: 50px 0 0 0;
+
+.social-media-icons {
+  padding: $social-media-icons-padding;
+  display: flex;
+  flex-direction: row;
+
+  // Center horizontally
+  justify-content: center;
+
+  .social-media-icon {
+    text-decoration: none;
+    color: map-get($colors, pink);
+    opacity: 0.4;
+    font-size: $social-media-icons-font-size;
+
+    padding: 0 5px;
+
+    transition: 0.2s opacity;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}

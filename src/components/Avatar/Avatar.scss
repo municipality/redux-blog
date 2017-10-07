@@ -33,8 +33,7 @@ $avatar-name-font-weight: 600;
 
 // Use this CSS only when the avatar is in the sidebar component
 .sidebar .avatar {
-  position: absolute;
-  top: 15%;
+  position: relative;
   left: 50%;
   transform: translateX(-50%);
 }

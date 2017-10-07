@@ -2,4 +2,5 @@
   width: 320px;
   position: relative;
   background-color: #2b2b2b;
-  min-height: 600px; }
+  min-height: 600px;
+  padding: 50px 0; }

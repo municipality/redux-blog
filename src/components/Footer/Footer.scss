@@ -1,10 +1,7 @@
-$footer-padding: 0 0 150px 0;
-
 .footer {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
-
-  padding: $footer-padding;
+  padding: inherit;
 }

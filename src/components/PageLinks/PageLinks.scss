@@ -17,11 +17,11 @@ $page-link-padding: 5px 0;
     padding: $page-link-padding;
 
     // Do animation for hover over
-    transition: font-size 0.2s;
+    transition: opacity 0.2s;
   }
 
   a:hover {
     opacity: 1;
-    font-size: $page-link-hover-font-size;
+    // font-size: $page-link-hover-font-size;
   }
 }

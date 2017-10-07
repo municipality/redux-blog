@@ -24,6 +24,7 @@ var router = express.Router()
 router.get('/retrieveentries', function(req, res) {
   // Connect to db to read
   MongoClient.connect(url, function(err, db) {
+    if (err) throw err
     console.log('Connected successfully to server')
     //Get all entries under collection 'entries'
     var collection = db.collection('entries')
@@ -33,7 +34,6 @@ router.get('/retrieveentries', function(req, res) {
       res.json(entries)
       db.close()
     })
-
   })
 })
 
