@@ -23,9 +23,9 @@
   },
   "scripts": {
     "build-css":
-      "node-sass-chokidar --include-path ./src src/components -o src/components",
+      "node-sass-chokidar src/components -o src/components --include-path ./src ",
     "watch-css":
-      "npm run build-css && node-sass-chokidar --include-path ./src src/components/ -o src/components --watch --recursive",
+      "npm run build-css && node-sass-chokidar src/components/ -o src/components --watch --recursive --include-path ./src ",
     "postinstall": "npm run build",
     "debug": "concurrently \"react-scripts start\" \"npm run watch-css\"",
     "build": "react-scripts build && npm run build-css",

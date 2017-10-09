@@ -27,7 +27,7 @@ $social-media-icons-padding: 10px 0;
 }
 
 $sidebar-social-media-icons-border-width: 2px;
-$sidebar-social-media-icons-border-color: #634b4b;
+$sidebar-social-media-icons-border-color: map-get($colors, line);
 .sidebar .social-media-icons {
   padding: $social-media-icons-padding;
   border-top: $sidebar-social-media-icons-border-width solid

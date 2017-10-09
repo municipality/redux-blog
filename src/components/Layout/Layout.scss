@@ -1,7 +1,13 @@
+$layout-min-height: 720px;
+$layout-min-width: 1000px;
+
 .layout {
   position: absolute;
   height: 100%;
   width: 100%;
   display: flex;
   flex-direction: row;
+
+  min-height: $layout-min-height;
+  min-width: $layout-min-width;
 }

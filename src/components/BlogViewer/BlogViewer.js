@@ -1,6 +1,8 @@
 import React from 'react'
 import Blog from 'containers/Blog'
-import SearchField from 'containers/SearchField'
+import BlogHeader from 'components/BlogHeader'
+
+import './BlogViewer.css'
 /**
  * This is the container for the blog view
  * @type {React component}
@@ -8,7 +10,7 @@ import SearchField from 'containers/SearchField'
 
 const BlogViewer = () => (
   <div className="blog-viewer">
-    <SearchField placeholder="Search..." />
+    <BlogHeader />
     <Blog />
   </div>
 )

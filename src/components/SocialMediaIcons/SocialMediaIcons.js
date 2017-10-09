@@ -1,6 +1,11 @@
 import React from 'react'
 import './SocialMediaIcons.css'
 
+/**
+ * name: maps to icon-{name}
+ * link: maps to onclick redirect to link
+ * @type {Array}
+ */
 const icons = [
   {
     name: 'facebook',

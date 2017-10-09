@@ -1,0 +1,15 @@
+$blog-header-height: 100px;
+
+.blog-viewer {
+  width: 100%;
+  .blog-header {
+    position: absolute;
+    height: $blog-header-height;
+    // Set positioning above blog
+    z-index: 1;
+  }
+
+  .entry-list {
+    padding: $blog-header-height 0 0 0;
+  }
+}
