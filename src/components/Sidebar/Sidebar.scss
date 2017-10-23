@@ -1,15 +1,21 @@
-$sidebar-min-width: 280px;
+$sidebar-min-width: 320px;
 $sidebar-bg-color: #2b2b2b;
-// $sidebar-min-height: 600px;
 
-$sidebar-padding: 180px 20px 10px 20px;
+$sidebar-padding: 10% 20px 10px 20px;
+
+$mobile-sidebar-padding: 100px 20px 100px;
 
 .sidebar {
   min-width: $sidebar-min-width;
   position: relative;
   background-color: $sidebar-bg-color;
-
-  // min-height: $sidebar-min-height;
-
+  // height: 100%;
   padding: $sidebar-padding;
+  z-index: 10;
+}
+
+@media only screen and (max-width: 768px) {
+  .sidebar {
+    padding: $mobile-sidebar-padding;
+  }
 }

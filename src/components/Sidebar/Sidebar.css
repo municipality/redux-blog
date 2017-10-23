@@ -1,5 +1,10 @@
 .sidebar {
-  min-width: 280px;
+  min-width: 320px;
   position: relative;
   background-color: #2b2b2b;
-  padding: 180px 20px 10px 20px; }
+  padding: 10% 20px 10px 20px;
+  z-index: 10; }
+
+@media only screen and (max-width: 768px) {
+  .sidebar {
+    padding: 100px 20px 100px; } }

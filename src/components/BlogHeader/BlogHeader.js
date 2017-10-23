@@ -1,4 +1,5 @@
 import React from 'react'
+import Greeting from 'components/Greeting'
 import SearchField from 'containers/SearchField'
 
 import './BlogHeader.css'
@@ -9,6 +10,7 @@ import './BlogHeader.css'
  */
 const BlogHeader = () => (
   <div className="blog-header">
+    <Greeting />
     <SearchField placeholder="Search blog title, entry, tag..." />
   </div>
 )

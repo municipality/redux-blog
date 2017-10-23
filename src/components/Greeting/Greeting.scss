@@ -1,0 +1,17 @@
+$welcome-font-size: 24px;
+$title-font-size: 36px;
+$greeting-font-size: 18px;
+
+.greeting {
+  .welcome {
+    font-size: $welcome-font-size;
+  }
+
+  .title {
+    font-size: $title-font-size;
+  }
+
+  .motto {
+    font-size: $greeting-font-size;
+  }
+}

@@ -1,16 +1,18 @@
 @import 'styles/colors';
 
+$text-input-font-size: 16px;
+
 .text-input {
   text-align: center;
   input[type='text'] {
-    font-size: 16px;
+    font-size: $text-input-font-size;
     width: 50%;
     margin: auto;
 
     border-radius: 5px;
     border-width: 1px;
     border-color: map-get($colors, red-gray);
-    padding: 5px;
+    padding: 10px;
 
     &:focus {
       outline: none;
