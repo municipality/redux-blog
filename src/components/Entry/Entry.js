@@ -31,7 +31,15 @@ const Entry = ({ title, text, img, tags, isOpen, date }) => {
       </div>
       {isOpen && (
         <div>
-          {img && <img className="entry-image" alt="brianslaundry" src={img} />}
+          {img && (
+            <div
+              className="entry-image"
+              alt="brianslaundry"
+              style={{
+                backgroundImage: `url(${img})`
+              }}
+            />
+          )}
           <div className="entry-text">{text}</div>
           <div className="entry-tags">
             {tags.map((tag, index) => <Tag key={tag} text={tag} />)}

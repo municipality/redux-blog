@@ -27,7 +27,11 @@
   flex-direction: row; }
 
 .entry-image {
-  width: 100%; }
+  width: 100%;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 .entry-text {
   font-size: 18px;
