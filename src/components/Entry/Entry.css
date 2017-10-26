@@ -1,6 +1,35 @@
+.entry {
+  padding: 20px 10%; }
+
+.entry-header {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  padding: 0 0 10px 0; }
+  @media only screen and (max-width: 768px) {
+    .entry-header {
+      display: block; } }
+
+.entry-title {
+  font-size: 48px;
+  letter-spacing: 4px;
+  font-weight: 100;
+  color: #a1a1cc;
+  flex: 1; }
+
+.entry-date {
+  font-size: 24px;
+  font-weight: 100;
+  color: #ff5a5f; }
+
 .entry-tags {
   display: flex;
   flex-direction: row; }
 
 .entry-image {
   width: 100%; }
+
+.entry-text {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 100; }

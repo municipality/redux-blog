@@ -1,0 +1,10 @@
+// USE @content to pass content from outside to inside
+
+$break-small: 768px;
+
+@mixin mobile-style() {
+  // If media is smaller than max-width, use content
+  @media only screen and (max-width: $break-small) {
+    @content;
+  }
+}

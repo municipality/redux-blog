@@ -1,8 +1,11 @@
-.greeting .welcome {
-  font-size: 24px; }
-
-.greeting .title {
-  font-size: 36px; }
-
-.greeting .motto {
-  font-size: 18px; }
+.greeting {
+  padding: 20px 40px; }
+  .greeting .welcome {
+    font-size: 24px; }
+  .greeting .title {
+    font-size: 36px;
+    font-weight: 600;
+    padding: 10px 40px;
+    color: #ff5a5f; }
+  .greeting .motto {
+    font-size: 18px; }

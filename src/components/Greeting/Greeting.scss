@@ -1,14 +1,20 @@
+@import 'styles/colors.scss';
+
 $welcome-font-size: 24px;
 $title-font-size: 36px;
 $greeting-font-size: 18px;
 
 .greeting {
+  padding: 20px 40px;
   .welcome {
     font-size: $welcome-font-size;
   }
 
   .title {
     font-size: $title-font-size;
+    font-weight: 600;
+    padding: 10px 40px;
+    color: map-get($colors, pink);
   }
 
   .motto {

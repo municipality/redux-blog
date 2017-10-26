@@ -2,3 +2,8 @@
   width: 100%;
   height: 100%;
   overflow-y: scroll; }
+  @media only screen and (max-width: 768px) {
+    .route-content {
+      height: auto;
+      width: auto;
+      overflow-y: auto; } }

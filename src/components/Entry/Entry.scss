@@ -1,3 +1,34 @@
+@import 'styles/colors.scss';
+@import 'styles/media.scss';
+
+.entry {
+  padding: 20px 10%;
+}
+
+.entry-header {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  padding: 0 0 10px 0;
+
+  @include mobile-style() {
+    display: block;
+  }
+}
+
+.entry-title {
+  font-size: 48px;
+  letter-spacing: 4px;
+  font-weight: 100;
+  color: map-get($colors, pastel-blue);
+  flex: 1;
+}
+
+.entry-date {
+  font-size: 24px;
+  font-weight: 100;
+  color: map-get($colors, pink);
+}
 .entry-tags {
   display: flex;
   flex-direction: row;
@@ -5,4 +36,12 @@
 
 .entry-image {
   width: 100%;
+  // Make the image smaller than the rest of entry
+  // padding: 0 15%;
+}
+
+.entry-text {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 100;
 }

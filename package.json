@@ -18,8 +18,14 @@
   "devDependencies": {
     "babel-eslint": "^7.2.3",
     "concurrently": "^3.5.0",
+    "enzyme": "^3.1.0",
+    "enzyme-adapter-react-16": "^1.0.2",
     "eslint": "^4.1.1",
-    "eslint-plugin-react": "^7.4.0"
+    "eslint-plugin-react": "^7.4.0",
+    "jest": "^21.2.1",
+    "jest-cli": "^21.2.1",
+    "jest-junit": "^3.1.0",
+    "react-test-renderer": "^16.0.0"
   },
   "scripts": {
     "build-css":
@@ -27,11 +33,14 @@
     "watch-css":
       "npm run build-css && node-sass-chokidar src/components/ -o src/components --watch --recursive --include-path ./src ",
     "postinstall": "npm run build",
-    "debug": "concurrently \"react-scripts start\" \"npm run watch-css\"",
+    "debug":
+      "concurrently \"react-scripts start\" \"npm run watch-css\" \"npm run start-dev\"",
     "build": "react-scripts build && npm run build-css",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "start": "node ./bin/www",
-    "start-dev": "NODE_ENV=development node ./bin/www"
+    "start-dev": "NODE_ENV=development node ./bin/www",
+    "jest": "jest",
+    "cov": "jest --coverage"
   }
 }
