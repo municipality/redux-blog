@@ -12,16 +12,16 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Layout>
-          <Sidebar />
-          {/* Use RouteContent so that Sidebar
+        {/* <Layout> */}
+        {/* <Sidebar /> */}
+        {/* Use RouteContent so that Sidebar
             is fixed position with RouteContent */}
-          <RouteContent>
-            <Switch>
-              <Route exact path="/" component={BlogViewer} />
-            </Switch>
-          </RouteContent>
-        </Layout>
+        {/* <RouteContent> */}
+        <Switch>
+          <Route exact path="/" component={BlogViewer} />
+        </Switch>
+        {/* </RouteContent> */}
+        {/* </Layout> */}
       </div>
     )
   }

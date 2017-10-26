@@ -2,12 +2,41 @@
 
 $welcome-font-size: 24px;
 $title-font-size: 36px;
-$greeting-font-size: 18px;
+$motto-font-size: 18px;
+$greeting-height: 80px;
+$greeting-expanded-height: 150px;
+$greeting-transition-duration: 0.2s;
+
+.greeting-wrapper {
+  margin: 0 0 20px 0;
+  height: $greeting-expanded-height;
+}
 
 .greeting {
   padding: 20px 40px;
+  position: fixed;
+  width: 100%;
+  height: $greeting-height;
+  background-color: white;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+  transition: height $greeting-transition-duration;
+  &.expanded {
+    height: $greeting-expanded-height;
+    border-bottom: 0;
+  }
+
+  // TRANSITION ANIMATION FOR WELCOME
   .welcome {
     font-size: $welcome-font-size;
+    height: 0px;
+    overflow: hidden;
+    transition: height $greeting-transition-duration;
+  }
+
+  .welcome.expanded {
+    height: $welcome-font-size;
   }
 
   .title {
@@ -17,7 +46,15 @@ $greeting-font-size: 18px;
     color: map-get($colors, pink);
   }
 
+  // TRANSITION ANIMATION FOR MOTTO
   .motto {
-    font-size: $greeting-font-size;
+    font-size: $motto-font-size;
+    height: 0;
+    overflow: hidden;
+    transition: height $greeting-transition-duration;
+  }
+
+  .motto.expanded {
+    height: $motto-font-size*3;
   }
 }

@@ -52,7 +52,7 @@ const Entry = ({ title, text, img, tags, isOpen, date }) => {
 
 Entry.propTypes = {
   title: PropTypes.string.isRequired,
-  date: PropTypes.string.isRequired,
+  date: PropTypes.number.isRequired,
   text: PropTypes.string.isRequired,
   img: PropTypes.string,
   tags: PropTypes.arrayOf(PropTypes.string),

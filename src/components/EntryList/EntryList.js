@@ -13,7 +13,7 @@ EntryList.propTypes = {
     PropTypes.shape({
       //May need id here in the future
       title: PropTypes.string.isRequired,
-      date: PropTypes.string.isRequired,
+      date: PropTypes.number.isRequired,
       text: PropTypes.string.isRequired,
       img: PropTypes.string,
       tags: PropTypes.arrayOf(PropTypes.string),

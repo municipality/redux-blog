@@ -14,13 +14,13 @@
   font-size: 48px;
   letter-spacing: 4px;
   font-weight: 100;
-  color: #a1a1cc;
+  color: #ff5a5f;
   flex: 1; }
 
 .entry-date {
   font-size: 24px;
   font-weight: 100;
-  color: #ff5a5f; }
+  color: #a1a1cc; }
 
 .entry-tags {
   display: flex;

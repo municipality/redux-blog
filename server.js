@@ -48,7 +48,7 @@ Nisi porta lorem mollis aliquam ut. Lorem mollis aliquam ut porttitor leo a diam
 `,
         isOpen: true,
         tags: ['tag1', 'tag2', 'tag3', 'tag4'],
-        date: new Date()
+        date: Date.now()
       }
     ])
     return

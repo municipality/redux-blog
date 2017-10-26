@@ -20,14 +20,14 @@
   font-size: 48px;
   letter-spacing: 4px;
   font-weight: 100;
-  color: map-get($colors, pastel-blue);
+  color: map-get($colors, pink);
   flex: 1;
 }
 
 .entry-date {
   font-size: 24px;
   font-weight: 100;
-  color: map-get($colors, pink);
+  color: map-get($colors, pastel-blue);
 }
 .entry-tags {
   display: flex;
